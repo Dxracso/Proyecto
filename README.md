@@ -1,2 +1,4 @@
 # Proyecto
-Proyecto :v
+
+informacion : Pa ke kieres saber eso ?... jaja saludos ;]
+
