@@ -5,13 +5,14 @@
  */
 package edu.co.sena.modelo.dto;
 
+import java.io.Serializable;
 import java.sql.Date;
 
 /**
  *
  * @author Dxracso
  */
-public class RegistroEquipo {
+public class RegistroEquipo implements Serializable {
 
     private Integer numeroRegistro;
     private Date fechaEntrada;

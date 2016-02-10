@@ -5,11 +5,13 @@
  */
 package edu.co.sena.modelo.dto;
 
+import java.io.Serializable;
+
 /**
  *
  * @author Dxracso
  */
-public class Propietario {
+public class Propietario implements Serializable {
     
     private String equipoIdEquipo;
     private String cuentaNumeroDocumento;

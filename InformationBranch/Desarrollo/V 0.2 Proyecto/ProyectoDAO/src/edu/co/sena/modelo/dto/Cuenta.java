@@ -5,6 +5,7 @@
  */
 package edu.co.sena.modelo.dto;
 
+import java.io.Serializable;
 import java.sql.Blob;
 import java.sql.Date;
 
@@ -12,7 +13,7 @@ import java.sql.Date;
  *
  * @author Usuario
  */
-public class Cuenta {
+public class Cuenta implements Serializable {
     private String numeroDocumento;
     private String tipoDocumento;
     private String primeroNombre;
