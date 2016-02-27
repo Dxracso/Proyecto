@@ -6,6 +6,7 @@
 package edu.co.sena.modelo.dao;
 
 import edu.co.sena.modelo.dto.Usuario;
+import edu.co.sena.modelo.dto.UsuarioPK;
 import java.util.List;
 
 /**
@@ -16,7 +17,9 @@ public interface UsuarioDAO {
     public List<Usuario> findAll();
     public String getTableName();
     public void insert(Usuario user);
-    public void update(Usuario user);
-    public void deleteForPk();
-    public void deleteAll();
+    public void update(UsuarioPK userpk,Usuario user);
+    public void updatePK(UsuarioPK userViejo,UsuarioPK userNuevo);
+    public void deleteForPk(UsuarioPK user);
+    public List<Usuario> findByPK(UsuarioPK user);
+    public int count();
 }
