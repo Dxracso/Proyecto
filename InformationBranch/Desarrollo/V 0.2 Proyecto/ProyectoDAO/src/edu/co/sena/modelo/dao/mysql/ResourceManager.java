@@ -21,7 +21,7 @@ public class ResourceManager {
     private static String usuario = "remoto";
     private static String clave = "123456789";
 
-    public static Connection connection() throws SQLException { 
+    public static synchronized Connection connection() throws SQLException { 
         Connection conexion =null;
                
         try {
